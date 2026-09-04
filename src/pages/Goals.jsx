@@ -3,10 +3,12 @@ import GoalCard from "../components/GoalCard";
 
 function Goals() {
   return (
-    <div>
-      <h2>My Goals</h2>
-      <GoalCard goalName="Emergency Fund" saved={25000} target={50000} />
-      <GoalCard goalName="Vacation Fund" saved={10000} target={20000} />
+    <div className="goals-page">
+      <h2 className="goals-title">My Goals</h2>
+      <div className="goals-container">
+        <GoalCard goalName="Emergency Fund" saved={25000} target={50000} />
+        <GoalCard goalName="Vacation Fund" saved={10000} target={20000} />
+      </div>
     </div>
   );
 }
