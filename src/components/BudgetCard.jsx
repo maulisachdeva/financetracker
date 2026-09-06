@@ -20,7 +20,8 @@ function BudgetCard({ category, spent, budget }) {
           style={{
             background: barColor,
             width: `${percent}%`,
-            height: "10px"
+            height: "10px",
+            transition: "width 0.3s ease" // 👈 added smooth animation
           }}
         ></div>
       </div>
