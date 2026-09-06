@@ -18,7 +18,12 @@ function GoalCard({ goalName, saved, target }) {
       <p>₹{saved} / ₹{target}</p>
       <div style={{ background: "#ddd", width: "100%", height: "10px" }}>
         <div
-          style={{ background: barColor, width: `${percent}%`, height: "10px" }}
+          style={{
+            background: barColor,
+            width: `${percent}%`,
+            height: "10px",
+            transition: "width 0.3s ease" // 👈 added smooth animation
+          }}
         ></div>
       </div>
       <p>{percent}%</p>
